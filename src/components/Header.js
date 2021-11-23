@@ -17,7 +17,7 @@ export default function Header() {
           <ul class="nav-list">
             <li class="nav-item">
               <Link
-                to="/"
+                to="/blog"
                 class={home ? 'nav-link current-page' : 'nav-link'}
                 onClick={() => {
                   setAbout(false);
