@@ -1,14 +1,12 @@
 import Header from './components/Header';
-import Home from './pages/Home';
-import About from './pages/About';
-import RecentPosts from './pages/RecentPosts';
+import Body from './components/Body';
 import Footer from './components/Footer';
 
 function App() {
   return (
     <div>
       <Header />
-      <Home />
+      <Body />
       <Footer />
     </div>
   );

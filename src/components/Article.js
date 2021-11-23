@@ -1,4 +1,12 @@
-export const Article = ({ title, img, info, link, text, strong, altText }) => {
+export const FeaturedArticle = ({
+  title,
+  img,
+  info,
+  link,
+  text,
+  altText,
+  strong,
+}) => {
   return (
     <article class="article-featured">
       <h2 class="article-title">{title}</h2>
@@ -15,7 +23,7 @@ export const Article = ({ title, img, info, link, text, strong, altText }) => {
   );
 };
 
-export const FeaturedArticle = ({ title, img, info, link, text, altText }) => {
+export const Article = ({ title, img, info, link, text, altText }) => {
   return (
     <article class="article-recent">
       <div class="article-recent-main">

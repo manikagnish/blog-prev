@@ -1,4 +1,11 @@
+import { Link } from 'react-router-dom';
+import { useState } from 'react';
+
 export default function Header() {
+  const [home, setHome] = useState(true);
+  const [about, setAbout] = useState(false);
+  const [recent, setRecent] = useState(false);
+
   return (
     <header>
       <div class="container container-flex">
@@ -9,19 +16,43 @@ export default function Header() {
         <nav>
           <ul class="nav-list">
             <li class="nav-item">
-              <a href="index.html" class="nav-link current-page">
+              <Link
+                to="/"
+                class={home ? 'nav-link current-page' : 'nav-link'}
+                onClick={() => {
+                  setAbout(false);
+                  setHome(!home);
+                  setRecent(false);
+                }}
+              >
                 Home
-              </a>
+              </Link>
             </li>
             <li class="nav-item">
-              <a href="about-me.html" class="nav-link">
+              <Link
+                to="/about"
+                class={about ? 'nav-link current-page' : 'nav-link'}
+                onClick={() => {
+                  setAbout(!about);
+                  setHome(false);
+                  setRecent(false);
+                }}
+              >
                 About me
-              </a>
+              </Link>
             </li>
             <li class="nav-item">
-              <a href="recent-posts.html" class="nav-link">
+              <Link
+                to="/recent-posts"
+                class={recent ? 'nav-link current-page' : 'nav-link'}
+                onClick={() => {
+                  setAbout(false);
+                  setHome(false);
+                  setRecent(!recent);
+                }}
+              >
                 Recent Posts
-              </a>
+              </Link>
             </li>
           </ul>
         </nav>

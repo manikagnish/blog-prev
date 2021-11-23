@@ -1,7 +1,7 @@
 import { Article, FeaturedArticle } from './Article';
 import { articleContent, featuredArticleContent } from '../content';
 
-export default function Main() {
+export default function HomeMain() {
   return (
     <main>
       {featuredArticleContent.map(article => (
