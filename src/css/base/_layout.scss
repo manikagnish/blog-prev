@@ -1,0 +1,26 @@
+.container {
+  width: 90%;
+  max-width: 100rem;
+  margin: 0 auto;
+}
+
+.container-flex {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+
+  @include tab-port {
+    flex-direction: row;
+  }
+}
+
+@include tab-port {
+  main {
+    width: 70%;
+  }
+
+  aside {
+    width: 25%;
+    min-width: 200px;
+  }
+}

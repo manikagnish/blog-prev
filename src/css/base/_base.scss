@@ -1,0 +1,35 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+body {
+  font-size: 1.8rem;
+  font-family: "Ubuntu", sans-serif;
+  background-color: var(--clr-background);
+  color: var(--clr-gray-dark);
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+
+img {
+  max-width: 100%;
+  display: inline-block;
+}
+
+li {
+  list-style: none;
+}

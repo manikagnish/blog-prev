@@ -1,0 +1,98 @@
+h1,
+h2,
+h3 {
+  font-family: "Lora", serif;
+  font-weight: normal;
+  color: var(--clr-blue-dark);
+  margin-top: 0;
+}
+
+h1 {
+  font-size: 3.2rem;
+}
+
+h2 {
+  margin-bottom: 1em;
+}
+
+strong {
+  font-weight: 700;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  letter-spacing: 2.4px;
+  text-transform: uppercase;
+  color: var(--clr-blue);
+  font-weight: bold;
+  margin-bottom: 1.5em;
+
+  @include tab-port {
+    margin-bottom: 0;
+  }
+}
+
+.nav-link {
+  letter-spacing: 1.5px;
+  font-weight: bold;
+  color: var(--clr-gray-dark);
+  font-size: 1.6rem;
+  text-transform: uppercase;
+}
+
+.article-title {
+  font-size: 2.4rem;
+}
+
+.widget-title {
+  font-family: "Ubuntu", sans-serif;
+  letter-spacing: 2px;
+  font-weight: bold;
+  font-size: 2.2rem;
+}
+
+.widget-recent-post-title {
+  font-size: 1.8rem;
+  font-weight: 400;
+}
+
+.article-info,
+.article-read-more {
+  font-size: 1.4rem;
+}
+
+.article-info {
+  margin: 2em 0;
+}
+
+.article-read-more {
+  font-weight: bold;
+  color: var(--clr-blue);
+  letter-spacing: 1.5px;
+  margin-top: 1.5em;
+  text-transform: uppercase;
+  transition: all 0.3s ease-in-out;
+}
+
+.article-read-more:hover,
+.article-read-more:focus {
+  color: var(--clr-blue-dark);
+  text-decoration: underline;
+}
+
+.para-link-line {
+  color: var(--clr-blue);
+  text-decoration: underline;
+  transition: all 0.15s ease-in-out;
+}
+
+.para-link-line:hover,
+.para-link-line:focus {
+  color: var(--clr-blue-dark);
+}
+
+.article-title-about {
+  font-size: 2.1rem;
+  color: var(--clr-blue);
+  margin-top: 1em;
+}

@@ -1,0 +1,29 @@
+@mixin tab-port {
+  @media (min-width: 700px) {
+    @content;
+  }
+}
+
+@mixin tab-land {
+  @media (min-width: 768px) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: 992px) {
+    @content;
+  }
+}
+
+@mixin big-desktop {
+  @media (min-width: 1200px) {
+    @content;
+  }
+}
+
+@mixin super-big-desktop {
+  @media (min-width: 1400px) {
+    @content;
+  }
+}
