@@ -1,12 +1,14 @@
 import Header from './components/Header';
-import BlogBody from './components/BlogBody';
+import Home from './pages/Home';
+import About from './pages/About';
+import RecentPosts from './pages/RecentPosts';
 import Footer from './components/Footer';
 
 function App() {
   return (
     <div>
       <Header />
-      <BlogBody />
+      <Home />
       <Footer />
     </div>
   );
