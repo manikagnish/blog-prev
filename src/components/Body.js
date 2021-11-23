@@ -11,8 +11,8 @@ export default function Body() {
       <Routes>
         <Route path="/" element={<HomeMain />} />
         <Route path="/blog" element={<HomeMain />} />
-        <Route path="about" element={<AboutMain />} />
-        <Route path="recent-posts" element={<RecentPostsMain />} />
+        <Route path="/blog/about" element={<AboutMain />} />
+        <Route path="/blog/recent-posts" element={<RecentPostsMain />} />
       </Routes>
       <Aside />
     </div>

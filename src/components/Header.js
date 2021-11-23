@@ -30,7 +30,7 @@ export default function Header() {
             </li>
             <li class="nav-item">
               <Link
-                to="/about"
+                to="/blog/about"
                 class={about ? 'nav-link current-page' : 'nav-link'}
                 onClick={() => {
                   setAbout(!about);
@@ -43,7 +43,7 @@ export default function Header() {
             </li>
             <li class="nav-item">
               <Link
-                to="/recent-posts"
+                to="/blog/recent-posts"
                 class={recent ? 'nav-link current-page' : 'nav-link'}
                 onClick={() => {
                   setAbout(false);
