@@ -6,6 +6,7 @@ export default function RecentPostsMain() {
     <main>
       {articleContentRecentPosts.map(article => (
         <Article
+          key={article.id}
           title={article.title}
           text={article.text}
           link={article.link}

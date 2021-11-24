@@ -6,6 +6,7 @@ export default function Main() {
     <main>
       {featuredArticleContent.map(article => (
         <FeaturedArticle
+          key={article.id}
           title={article.title}
           text={article.text}
           link={article.link}
@@ -17,6 +18,7 @@ export default function Main() {
       ))}
       {articleContent.map(article => (
         <Article
+          key={article.id}
           title={article.title}
           text={article.text}
           link={article.link}

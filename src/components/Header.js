@@ -8,17 +8,17 @@ export default function Header() {
 
   return (
     <header>
-      <div class="container container-flex">
-        <div class="site-title">
+      <div className="container container-flex">
+        <div className="site-title">
           <h1>Living the simple life</h1>
-          <p class="subtitle">A blog exploring minimalism in life</p>
+          <p className="subtitle">A blog exploring minimalism in life</p>
         </div>
         <nav>
-          <ul class="nav-list">
-            <li class="nav-item">
+          <ul className="nav-list">
+            <li className="nav-item">
               <Link
                 to="/blog"
-                class={home ? 'nav-link current-page' : 'nav-link'}
+                className={home ? 'nav-link current-page' : 'nav-link'}
                 onClick={() => {
                   setAbout(false);
                   setHome(!home);
@@ -28,10 +28,10 @@ export default function Header() {
                 Home
               </Link>
             </li>
-            <li class="nav-item">
+            <li className="nav-item">
               <Link
                 to="/blog/about"
-                class={about ? 'nav-link current-page' : 'nav-link'}
+                className={about ? 'nav-link current-page' : 'nav-link'}
                 onClick={() => {
                   setAbout(!about);
                   setHome(false);
@@ -41,10 +41,10 @@ export default function Header() {
                 About me
               </Link>
             </li>
-            <li class="nav-item">
+            <li className="nav-item">
               <Link
                 to="/blog/recent-posts"
-                class={recent ? 'nav-link current-page' : 'nav-link'}
+                className={recent ? 'nav-link current-page' : 'nav-link'}
                 onClick={() => {
                   setAbout(false);
                   setHome(false);
