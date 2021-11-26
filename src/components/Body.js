@@ -10,7 +10,7 @@ export default function Body() {
     <div class="container container-flex">
       <Routes>
         <Route path="/" element={<HomeMain />} />
-        <Route path="/blog" element={<HomeMain />} />
+        <Route path="/blog/" element={<HomeMain />} />
         <Route path="/blog/about" element={<AboutMain />} />
         <Route path="/blog/recent-posts" element={<RecentPostsMain />} />
       </Routes>
